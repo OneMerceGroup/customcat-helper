@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Customcat helper - popup</title>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      main {
+        width: 500px;
+        height: 100vh;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      td,
+      th {
+        text-align: left;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      td:last-of-type,
+      th:last-of-type {
+        text-align: right;
+      }
+
+      tbody {
+        max-height: 500px;
+        overflow: scroll;
+      }
+
+      thead {
+        background: #f4f4f5;
+        position: sticky;
+        top: 0;
+      }
+
+      th {
+        padding: 20px 8px;
+        font-weight: 500;
+      }
+
+      .cost {
+        font-weight: 500;
+      }
+
+      tfoot {
+        background-color: #f4f4f5;
+        bottom: 0;
+        position: sticky;
+        font-weight: 500;
+      }
+
+      #output {
+        max-height: calc(100vh - 16px);
+        overflow-y: scroll;
+      }
+
+      /* #view-order {
+        color: #18181b;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0.5rem 1rem;
+        background-color: #fafafa;
+        border-radius: calc(0.5rem - 2px);
+        height: 2.25rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      } */
+
+      input[type="checkbox"] {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- <button type="button" id="view-order">View Orders</button> -->
+      <div id="output"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
